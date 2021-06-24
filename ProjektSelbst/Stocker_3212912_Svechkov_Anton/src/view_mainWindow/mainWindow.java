@@ -20,11 +20,12 @@ public class mainWindow extends JFrame {
 		
 		this.setVisible(true);
 		
-		
+		//setting the pane of the mane window
 		this.myPane = new JDesktopPane();
 		this.setContentPane(myPane);
 		
 		
+		//tuning of the menu bar
 		this.hauptMenu = new JMenuBar();
 
 		JMenu Datei = new JMenu("Datei");
@@ -35,6 +36,8 @@ public class mainWindow extends JFrame {
 				
 		
 		JMenu AktienSuche = new JMenu("Aktiensuche");
+		
+		
 		JMenu Einstellungen = new JMenu("Einstellungen");
 		
 		
@@ -51,19 +54,22 @@ public class mainWindow extends JFrame {
 			
 		
 		this.setJMenuBar(hauptMenu);
+		//tuning of menu bar completed
+		
+		
 
-//		frame.setVisible(true);
-//		
-//		JDesktopPane myPane = new JDesktopPane();
-//		frame.setContentPane(myPane);
-//		
-//		
+
+		
+		
 
 		this.setVisible(true);
 		
 		        
 	}
+
 	
+	// methods of mainWindow class to add/delete chartWindow-related buttons
+	// to/from Fenster menu of menu-bar in the main window
 	public void addWatchlistToFenster (FensterChartJMenuItem FensterMenuItem) {
 		this.Fenster.add(FensterMenuItem);
 		
